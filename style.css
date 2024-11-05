@@ -28,9 +28,13 @@ body {
   --light-cyan: #cee3e9;
   --neon-green: #53ffaa;
 
+  /* Desktop */
   --font-lg: 1.75rem;
-  --font-m: 1.5rem;
   --font-s-heading: 0.8125rem;
+
+  /* Mobile */
+  --font-heading: 0.6875rem;
+  --font-m: 1.5rem;
 
   --letter-spacing-heading: 0.2556rem;
   --letter-spacing-lg: -0.0187rem;
@@ -94,4 +98,17 @@ body {
 
 .dice {
   background-color: aqua;
+}
+
+@media screen and (max-width: 550px) {
+  .content-container {
+    max-width: 343px;
+  }
+  .heading {
+    font-size: var(--font-s-heading);
+  }
+
+  .quote {
+    font-size: var(--font-m);
+  }
 }
